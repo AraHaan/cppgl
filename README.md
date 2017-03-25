@@ -31,10 +31,10 @@ USE_OPENGL10
 ```
 
 **I can only use up to OpenGL 2.1 without my program crashing, can I still
-use this library?*
+use this library?**
 
 Yes, as long as you use any version before OpenGL 3.0 you should be golden.
-I know of one Craphics Driver (The Intel gm54 from 2008) that is known
+I know of one Craphics Driver (The Intel gm45 from 2008) that is known
 to cause problems with versions of OpenGL newer than 2.1.
 
 **How can I compile this library?**
@@ -44,3 +44,13 @@ Just include cppgl.hpp into your source files and then compile like normal.
 **What if a new version of OpenGL comes out?**
 If a new version comes out simply tell me on discord or file an issue on this
 github repository.
+
+### Including this library
+
+In order to include this define one of the macros above and then right after (the line right after) do this:
+
+```cpp
+#include <cppgl/cppgl.hpp>
+```
+
+And you are all set to use that version of OpenGL.
